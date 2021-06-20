@@ -40,8 +40,9 @@
 <img src="https://user-images.githubusercontent.com/76841455/103441305-47e31c80-4c90-11eb-9603-e6148e7f539a.jpg" width="150"></img>
 </p>
 
-<h2>▶ 구글 플레이스토어</h2>
+<h2>▶ 구글 플레이스토어 · APK</h2>
 
 👉 [구글 플레이스토어 링크](https://play.google.com/store/apps/details?id=com.bh.myownweathercaster)<br/>
+👉 [APK 다운로드 링크](https://github.com/iconic0808/Project_My_Own_Weathercaster_2020.08/blob/master/app/release/app-release.apk)<br/>
 ✔ minSdkVersion 26<br/>
 ✔ targetSdkVersion 29
