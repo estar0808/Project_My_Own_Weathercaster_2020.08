@@ -1,5 +1,5 @@
 <h1 align="center">나만의 기상캐스터</h1>
-<img src="https://user-images.githubusercontent.com/76841455/122673065-b5b4dd80-d209-11eb-90a6-4cb1fde8c39f.png" width="300" height="300" align="left"></img>
+<img src="https://user-images.githubusercontent.com/76841455/122673065-b5b4dd80-d209-11eb-90a6-4cb1fde8c39f.png" width="290" height="290" align="left"></img>
 
 🔊 나만의 기상캐스터란?<br/>
 나만의 기상캐스터는 기상 및 대기정보를 확인할 수 있는 애플리케이션입니다. 현 위치의 GPS 좌표나 지정한 읍/면/동 위치를 설정해 해당 지역의 기상 및 대기정보를 쉽고 빠르게 확인할 수 있습니다. 사용자가 확인할 수 있는 정보에는 현재 기상 및 대기 정보, 단기 예보, 중기 예보, 위성·레이더 영상, 기상특보 및 예비 특보를 확인할 수 있습니다.<br/>
