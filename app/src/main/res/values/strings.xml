@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">나만의 기상캐스터</string>
+    <string name="defaultValue">-</string>
+    <string name="data_key">-</string>
+    <string name="v_world_key">-</string>
+    <string name="admob_app_id">-</string>
+    <string name="banner_ad_unit_id">-</string>
+    <string name="banner_ad_unit_id_for_test">-</string>
+</resources>

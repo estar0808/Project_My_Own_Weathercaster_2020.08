@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_mf1_date"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="1dp"
+                    android:autoSizeMaxTextSize="10dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/iv_mf1_sky_am"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_mf1_date"/>
+
+                <ImageView
+                    android:id="@+id/iv_mf1_sky_pm"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_mf1_sky_am"/>
+
+                <TextView
+                    android:id="@+id/tv_mf1_temp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="1dp"
+                    android:autoSizeMaxTextSize="10dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_mf1_sky_pm"/>
+
+                <TextView
+                    android:id="@+id/tv_mf1_rainfall"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="1dp"
+                    android:autoSizeMaxTextSize="10dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_mf1_temp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

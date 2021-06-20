@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/fragment1">
+
+    <View
+        android:id="@+id/v_view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corner_ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_view_bg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_corner_f6f6f6"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/iv_fg1_reporter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/reporter1_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/v_view_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/v_view_bg2"
+        app:layout_constraintStart_toStartOf="@+id/v_view_bg2"
+        app:layout_constraintTop_toTopOf="@+id/v_view_bg2"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <TextView
+        android:id="@+id/tv_fg1_explain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="현재 기상 정보를 알려드릴게요!"
+        android:textColor="#000"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_view_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/v_view_bg2"
+        app:layout_constraintStart_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toTopOf="@+id/v_view_bg2"
+        app:layout_constraintHeight_percent="0.1"/>
+
+    <ImageView
+        android:id="@+id/iv_rainfall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rainfall_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/tv_rainfall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rainfall"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fg1_explain"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toTopOf="@+id/iv_rainfall" />
+
+    <ImageView
+        android:id="@+id/iv_humidity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/humidity_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_rainfall"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/iv_rainfall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_humidity"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fg1_explain"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toTopOf="@+id/iv_humidity" />
+
+    <ImageView
+        android:id="@+id/iv_default_wind"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wind"
+        app:layout_constraintEnd_toEndOf="@+id/iv_humidity"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/iv_humidity"
+        app:layout_constraintTop_toTopOf="@+id/iv_wind"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/iv_wind"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/wind_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_humidity"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/iv_humidity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/tv_wind_speed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fg1_explain"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toTopOf="@+id/iv_default_wind" />
+
+    <TextView
+        android:id="@+id/tv_wind_direction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_default_wind"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fg1_explain"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toEndOf="@+id/iv_fg1_reporter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_speed" />
+
+    <View
+        android:id="@+id/v_center_indicator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.015"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/v_center_indicator2" />
+
+    <View
+        android:id="@+id/v_center_indicator2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.015"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="2.5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline" />
+
+    <View
+        android:id="@+id/v_center_indicator3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.015"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline" />
+
+    <View
+        android:id="@+id/v_center_indicator4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.015"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/v_center_indicator3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
